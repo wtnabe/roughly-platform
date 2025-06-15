@@ -1,0 +1,32 @@
+module RoughlyPlatform
+  class Paths
+    attr_reader linux: String
+    attr_reader windows: String
+    attr_reader macos: String
+
+    def initialize: (linux: String, windows: String, macos: String) -> void
+  end
+
+  class UserProfilePath
+    @resolver: PlatformResolver
+
+    #
+    # @param [PlatformResolver] resolver
+    #
+    def initialize: (resolver: PlatformResolver) -> void
+
+    #
+    # @param [String] home
+    # @param [String] appdata
+    # @return [Paths]
+    #
+    def pair: (?home: String|nil, ?appdata: String|nil) -> Paths
+
+    #
+    # @param [String] home
+    # @param [String] appdata
+    # @return [String]
+    #
+    def resolve: (?home: String|nil, ?appdata: String|nil) -> String
+  end
+end

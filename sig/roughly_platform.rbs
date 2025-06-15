@@ -1,0 +1,14 @@
+module RoughlyPlatform
+  class Error < StandardError
+  end
+
+  #
+  # @return [:linux | :windows | :macos | :unknown]
+  #
+  def self?.os: () -> (:linux | :windows | :macos | :unknown)
+
+  #
+  # @return [String]
+  #
+  def self?.profile_path: () -> String
+end

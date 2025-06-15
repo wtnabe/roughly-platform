@@ -1,0 +1,16 @@
+module RoughlyPlatform
+  class PlatformResolver
+    @os: singleton(OS)
+
+    #
+    # @param [singleton(OS)] os
+    #
+    def initialize: (?os: singleton(OS)) -> void
+
+    #
+    # @return [:linux | :windows | :macos | :unknown]
+    #
+    def resolve: () -> (:linux | :windows | :macos | :unknown)
+  end
+end
+

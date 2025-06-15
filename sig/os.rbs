@@ -1,0 +1,33 @@
+# TypeProf 0.30.1
+
+# vendor/ruby/3.3.0/gems/os-1.1.4/lib/os.rb
+class OS
+  def config: -> untyped
+  def self.config: -> Hash[String, String]
+  def self.windows?: -> bool?
+  def self.posix?: -> bool?
+  def self.linux?: -> bool
+  def self.freebsd?: -> bool
+  def self.iron_ruby?: -> bool?
+  def self.bits: -> Integer?
+  def self.java?: -> bool?
+  def self.ruby_bin: -> String?
+  def self.mac?: -> bool?
+  def self.osx?: -> bool?
+  def self.x?: -> bool?
+  def self.rss_bytes: -> Integer
+  class Underlying
+    def self.bsd?: -> bool?
+    def self.windows?: -> bool
+    def self.linux?: -> bool
+    def self.docker?: -> bool?
+  end
+  def self.cygwin?: -> bool?
+  def self.dev_null: -> String?
+  def self.report: -> untyped
+  def self.cpu_count: -> Integer
+  def self.open_file_command: -> String
+  def self.app_config_path: (untyped) -> String
+  def self.parse_os_release: -> Hash[Symbol, String]
+  def self.hwprefs_available?: -> bool
+end

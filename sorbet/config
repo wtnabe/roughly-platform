@@ -1,0 +1,9 @@
+--dir
+.
+--did-you-mean=false
+--suggest-typed=true
+--ignore=vendor/
+--enable-experimental-lsp-signature-help
+--enable-experimental-rbs-signatures
+--enable-experimental-rbs-assertions
+--enable-experimental-rbs-comments

@@ -1,0 +1,3 @@
+module RoughlyPlatform
+  VERSION: String
+end
