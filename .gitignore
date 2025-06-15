@@ -4,6 +4,7 @@
 .DS_Store
 .Thumbs.db
 
+Gemfile.lock
 /.bundle/
 /.yardoc
 /_yardoc/
