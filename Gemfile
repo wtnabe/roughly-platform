@@ -11,4 +11,13 @@ gem "minitest-skip", "~> 0.0.3"
 gem "minitest-power_assert", "~> 0.3.1"
 gem "minitest-reporters", "~> 1.7"
 gem "standard", "~> 1.3"
-gem "steep", "~> 1.10"
+
+if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("3.1")
+  gem "steep", "~> 1.10"
+  gem "activesupport", "< 7"
+  gem "zeitwerk", "< 2.4"
+end
+if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("3.4")
+  gem "base64"
+  gem "logger"
+end

@@ -6,7 +6,19 @@ module RoughlyPlatform
   # @attr_reader [String] windows
   # @attr_reader [String] macos
   #
-  class Paths < ::Data.define(:linux, :windows, :macos); end
+  class Paths
+    #
+    # @param [String] linux
+    # @param [String] windows
+    # @param [String] macos
+    #
+    def initialize(linux:, windows:, macos:)
+      @linux = linux
+      @windows = windows
+      @macos = macos
+    end
+    attr_reader :linux, :windows, :macos
+  end
 
   class UserProfilePath
     def initialize(resolver:)

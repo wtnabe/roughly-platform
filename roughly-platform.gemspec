@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = "roughly platform resolver and more."
   spec.description = " now available user profile path."
   spec.homepage = "https://github.com/wtnabe/roughly-platform"
-  spec.required_ruby_version = ">= 3.2"
+  spec.required_ruby_version = ">= 2.7"
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
